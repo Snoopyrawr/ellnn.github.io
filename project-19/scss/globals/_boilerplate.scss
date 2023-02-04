@@ -1,0 +1,28 @@
+@use "../util" as u;
+
+html {
+  box-sizing: border-box;
+  font-size: 100%;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+  outline: none;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: u.$font;
+  background-color: var(--background-color);
+  color: var(--text-color);
+  line-height: 1.5;
+}
+
+.shadow-dark {
+  box-shadow: 0 0 u.em(20) rgba($color: #1b1b1b, $alpha: .2);
+  opacity: .9;
+}
+

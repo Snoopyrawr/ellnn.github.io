@@ -1,0 +1,240 @@
+@use "../util" as u;
+
+.portfolio .container {
+  padding-bottom: u.em(40);
+}
+
+.portfolio .portfolio-heading {
+  flex: 0 0 100%;
+  max-width: 100%;
+  margin-bottom: u.em(20);
+  text-transform: none;
+}
+
+.portfolio .portfolio-heading h2 {
+  color: var(--text-black-900);
+  font-weight: 500;
+  font-size: u.rem(16);
+  font-family: Arial, Helvetica, sans-serif;
+  opacity: 0.8;
+}
+
+#start-over {
+  color: var(--skin-color);
+}
+
+.fa-0 {
+  font-size: u.rem(17.6);
+}
+
+.portfolio .portfolio-heading h4 {
+  color: var(--text-black-700);
+}
+
+.portfolio .portfolio-item {
+  flex: 0 0 33.33%;
+  max-width: 33.33%;
+  margin-bottom: u.em(30);
+  user-select: none;
+}
+
+.portfolio .portfolio-item:last-child {
+  position: relative;
+}
+
+.portfolio .portfolio-item-inner {
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.portfolio .portfolio-item-inner .portfolio-item-thumbnail img {
+  width: 100% !important;
+}
+
+.portfolio .portfolio-filter {
+  flex: 0 0 100%;
+  max-width: 100%;
+  text-align: center;
+  user-select: none;
+}
+
+.portfolio .portfolio-filter button {
+  border: none;
+  background-color: transparent;
+  font-weight: 500;
+  text-transform: uppercase;
+  margin: 0 u.em(10);
+  cursor: pointer;
+  white-space: nowrap;
+  transition: 0.3s;
+  color: var(--text-black-700);
+  margin-bottom: 2em;
+}
+
+.portfolio .portfolio-filter button.active {
+  color: var(--skin-color);
+  font-weight: bold;
+  position: relative;
+  animation: .3s;
+}
+
+.portfolio .portfolio-filter button.active::before {
+  content: "";
+  position: absolute;
+  bottom: -0.75em;
+  left: 46%;
+  width: 0.3rem;
+  height: 0.3rem;
+  background-color: var(--skin-color);
+  border-radius: 50%;
+}
+
+.portfolio-item {
+  flex: 0 0 33.33%;
+  max-width: 33.33%;
+  margin-bottom: 1.5em;
+  margin-top: 3em;
+}
+
+.portfolio-item.hide{
+display:none
+}
+
+.portfolio item.show{
+display: block;
+animation: showItem 0.5s ease;
+}
+@keyframes showItem{
+0% {
+  transform: scale(.6);
+  opacity: 0;
+}
+100% {
+  transform: scale(1);
+  opacity: 1;
+}
+}
+
+.portfolio-item-inner {
+  position: relative;
+  overflow: hidden;
+}
+
+.portfolio-item .mask {
+  background: rgba($color: #000000, $alpha: 0.9);
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  transition: 0.3s;
+  opacity: 0 ;
+}
+
+.portfolio-item-inner:hover .mask {
+opacity: .9;
+}
+.portfolio-item .term {
+  color: #fff;
+  background: var(--skin-color);
+  border-bottom-left-radius: u.em(20);
+  border-top-left-radius: u.em(5);
+  border-top-right-radius: u.em(20);
+  border-bottom-right-radius: u.em(5);
+  top: 0;
+  left: 1.5em;
+  font-size: u.rem(10);
+  display: inline-block;
+  padding: 0.8em 0.625em;
+  z-index: 10;
+  position: absolute;
+  transform: translateY(-40px);
+  transition: 0.3s;
+}
+
+.portfolio-item h3 {
+  color: #fff;
+  font-size: 1.25rem;
+  margin: 1.25rem;
+  padding: 0 1.25em;
+  position: absolute;
+  top: 3.75rem;
+  transition: 0.3s;
+  transform: translateY(30px);
+  opacity: 0;
+}
+
+.portfolio-item .more-button {
+  color: #fff;
+  position: absolute;
+  bottom: 1.5em;
+  left: 1.5em;
+  font-size: u.rem(16);
+  display: block;
+  background: var(--skin-color);
+  height: 1.5rem;
+  width: 5rem;
+  cursor: pointer;
+  border-radius: u.em(25);
+  text-align: center;
+  opacity: 0;
+  transition: 0.3s;
+}
+
+.portfolio-item .more-button a {
+  color: #fff;
+}
+
+.portfolio-item .more-button:hover {
+opacity: .8;
+}
+
+.portfolio-item-inner:hover h3,
+.portfolio-item-inner:hover span {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.subtitle {
+  font-size: u.rem(12);
+  line-height: u.em(2);
+  color: hwb(0 81% 19%);
+}
+
+.fa-square {
+  font-size: u.rem(25);
+  color: var(--skin-color);
+}
+
+.subtitle-heading {
+  font-size: u.rem(14);
+  text-transform: none;
+}
+
+.subtitle-heading a {
+color: hsl(159, 28%, 40%);
+}
+
+#zero {
+  color: var(--skin-color);
+}
+
+.fa-timeline {
+  color: var(--skin-color);
+}
+
+.footer-portfolio {
+  color: var(--text-black-700);
+  position: absolute;
+  padding-bottom: u.em(80);
+}
+
+#learn-more {
+  color: var(--skin-color);
+  text-decoration: overline;
+}
+
+#lastchild {
+  position: relative;
+}
+

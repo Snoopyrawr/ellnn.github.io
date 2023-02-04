@@ -1,0 +1,117 @@
+@use "../util" as u;
+
+.section {
+  background: var(--bg-black-900);
+  min-height: 100vh;
+  display: block;
+  padding: 0 u.rem(30);
+  opacity: 1;
+  position: fixed;
+  left: 270px;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 1;
+  overflow-y: auto;
+  overflow-x: hidden;
+  transition: all .5s ease;
+}
+
+.section.back-section{
+  z-index: 0;
+}
+
+.section.active {
+  z-index: 2;
+  opacity: 1;
+  animation: slideSection 1s ease;
+}
+
+@keyframes slideSection {
+
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(0%);
+  }
+}
+
+.hidden {
+  display: none !important;
+}
+
+.section .container {
+  padding-top: u.em(60);
+  padding-bottom: u.em(70);
+}
+
+.section-title {
+  flex: 0 0 100%;
+  max-width: 100%;
+  margin-bottom: u.em(40);
+}
+
+.section-title h2 {
+  font-size: u.rem(30);
+  color: var(--text-black-900);
+  font-weight: 200;
+  position: relative;
+  font-family: "Silkscreen", cursive;
+}
+
+.section-title h2::before {
+  content: "";
+  height: u.em(3);
+  width: u.em(80);
+  background-color: var(--skin-color);
+  position: absolute;
+  top: 100%;
+  left: 0;
+  margin-top: u.em(4);
+  border-radius: u.em(20);
+  margin-left: u.em(5);
+}
+
+.section-title h2::after {
+  content: "";
+  height: u.em(2);
+  width: u.em(35);
+  background-color: var(--skin-color);
+  position: absolute;
+  top: 100%;
+  left: 0;
+  margin-top: u.em(10);
+  border-radius: u.em(20);
+  margin-left: u.em(28);
+}
+
+.portfolio-title h2::before {
+  margin-left: u.em(5);
+  width: u.em(100);
+  height: u.em(3);
+}
+
+.portfolio-title h2::after {
+  margin-left: u.em(33);
+  width: u.em(50);
+}
+
+.con-title h2::before {
+  margin-left: u.em(1);
+}
+
+.con-title h2::after {
+  margin-left: u.em(25);
+}
+
+.hidden {
+  display: none !important;
+}
+
+.padd-15 {
+  padding-left: u.em(15);
+  padding-right: u.em(15);
+}
+
+

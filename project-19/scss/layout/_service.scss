@@ -1,0 +1,96 @@
+@use "../util" as u;
+
+.service .container {
+  padding-bottom: u.em(40);
+}
+
+.service .service-item {
+  margin-bottom: u.em(10);
+  flex: 0 0 33.33%;
+  max-width: 33.33%;
+}
+
+.service .service-item .service-item-inner {
+  background-color: var(--bg-black-50);
+  border: u.em(1) solid var(--bg-black-50);
+  border-bottom-left-radius: u.em(20);
+  border-top-left-radius: u.em(5);
+  border-top-right-radius: u.em(20);
+  border-bottom-right-radius: u.em(5);
+  padding: u.em(30) u.em(15);
+  text-align: center;
+  transition: all 0.4s ease;
+  margin-top: u.em(10);
+}
+.service .service-item .service-item-inner:hover {
+  box-shadow: 0 0 u.em(20) var(--skin-color);
+}
+
+.service .service-item:last-child {
+padding-bottom: u.em(30);
+}
+
+.service .service-item .service-item-inner .icon {
+  height: u.em(60);
+  width: u.em(60);
+  border-radius: 50%;
+  display: block;
+  margin: 0 auto u.em(30);
+  text-align: center;
+  transition: all 0.4s ease;
+}
+
+.service .service-item .service-item-inner .icon .fa-regular {
+  font-size: u.rem(40);
+  line-height: u.em(30);
+  color: var(--skin-color);
+  transition: all 0.4s ease;
+}
+
+.service .service-item .service-item-inner:hover .icon {
+  background: var(--skin-color);
+}
+
+.service .service-item .service-item-inner:hover .icon .fa-regular {
+  font-size: u.rem(25);
+  color: white;
+  margin-top: u.em(4);
+}
+
+.service .service-item .service-item-inner h4 {
+  font-size: u.rem(18);
+  margin-bottom: u.em(15);
+  color: var(--skin-color);
+  font-weight: 700;
+  text-transform: capitalize;
+}
+ 
+.service .service-item .service-item-inner p {
+  font-size: u.rem(16);
+  color: var(--text-black-700);
+  line-height: u.em(25);
+}
+
+/* #icon-2 {
+  color: orange;
+}
+
+.service .service-item .service-item-inner:hover .icon .fa-circle-question {
+color: white !important;
+}
+ */
+
+
+
+.btn-sample {
+  padding: u.em(10) u.em(20);
+  border: none;
+  border-radius: u.em(25);
+  color: white;
+  background-color: var(--skin-color);
+  transition: all 0.2s ease;
+}
+
+.btn-sample:hover {
+  background-color: hsl(182, 42%, 57%);
+}

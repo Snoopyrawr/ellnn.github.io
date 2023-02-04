@@ -1,0 +1,84 @@
+@use "../util/" as u;
+
+@import url('https://fonts.googleapis.com/css2?family=Aboreto&family=Anek+Telugu:wght@300;500&family=Nanum+Gothic&family=Roboto+Mono&display=swap');
+
+h1,
+h2,
+h3 {
+  font-weight: 700;
+  line-height: 1.1;
+  margin-top: 0;
+}
+
+h1 {
+  font-size: clamp(u.rem(28), u.rem(16) + 2vw, u.rem(40));
+}
+
+h2 {
+  font-size: clamp(u.rem(22), u.rem(14) + 1.5vw, u.rem(36));
+}
+
+p {
+  margin-top: 0;
+  font-size: u.rem(16);
+}
+
+a,
+a:visited,
+a:active {
+  text-decoration: none;
+}
+
+#logo {
+  text-transform: capitalize;
+}
+/* 
+.p-intro {
+ padding-right: u.em(200);
+} */
+
+.p2 {
+  font-family: "Silkscreen", cursive;
+}
+
+.p3 {
+  font-family: "Times New Roman", Times, serif !important;
+}
+
+.timeline-text, .info-item {
+  font-family: 'Anek Telugu', sans-serif;
+}
+
+.skill-percent {
+  font-family: 'Aboreto', cursive;
+}
+
+#p-intro {
+  font-family: 'Roboto Mono', monospace;
+  font-size: u.rem(16);
+}
+
+/* #na1 {
+  color: rgb(218, 117, 147);
+}
+
+#na2 {
+  color: hsl(39, 84%, 67%);
+}
+
+#na3 {
+  color: rgb(224, 196, 71);
+}
+
+#na4 {
+  color: rgb(86, 214, 139);
+}
+
+#na5 {
+  color: rgb(116, 144, 236);
+}
+
+#na6 {
+  color: rgb(180, 112, 230);
+} */
+
